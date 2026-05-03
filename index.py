@@ -1,5 +1,4 @@
-from flask import Flask,render_template,request
-import json 
+from flask import Flask,render_template,request # session
 from lector_json import Lector
 
 app = Flask(__name__)
