@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            color: #fff;
+        }
+        table{
+            border-color: blue;
+            border-radius: 20px;
+            border-style: inset;
+            padding: 10px;
+            background-color: black;
+        }
+        table table{
+            border: 0px;
+            border-radius: 0px;
+            padding: 30px;
+        }
+        button{
+            padding: 7px;
+            color: #fff;
+            background-color: black;
+            border-color: rgb(28, 153, 255);
+        }
+        input{
+            padding: 3px;
+            border-radius: 20px;
+            border-color: color-mix(in hsl increasing hue, #6f00ff 60%, #ff0000 40%);
+            color: #000;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <table border="13" class="tabla_gr">
+            <tr> 
+                <td>
+                    <form action="/menu" method="POST">
+                        <center>
+                            <h2>INICIAR SESIÓN</h2>
+                        <center>
+                        <center>
+                            <img src="{{ url_for('static', filename='img/user_3.png') }}" alt="Logo de mi aplicación" width="100" height="100">
+                        </center>
+                        <form>
+                            <table>
+                                <tr>
+                                    <td>User: </td>
+                                    <td><input name="nombre"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Contraseña: </td>
+                                    <td><input name="contraseña"/></td>
+                                </tr>
+                            </table>
+                        </form>
+                        <button onclick="submit">Ingresar</button>
+                        <h3>{{ message }}</h3>
+                    </center>
+                </form>
+                </td> 
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
